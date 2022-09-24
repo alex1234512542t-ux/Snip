@@ -1,0 +1,39 @@
+//comment
+//# defines the start of a macro
+//$ defines a var [can not do math but values can change]
+
+
+#this{
+    
+}
+//macro with parameters.
+#this(){
+    
+}
+
+$pi = 3.14; 
+
+#NumTimesPi($num){
+    $(num) * $(pi) //the code that will be put in its place
+}
+
+//arrow makes the element being pointed to inherit the previous elements code
+
+#example1 & #example2{
+    
+}
+
+------------------------Snip example -----------------------------------
+$pi = 3.14;
+
+#PrintPiTimesNum($num){
+    printf("%s", $num * $pi);
+}
+
+----------------------- C code example -----------------------------------
+
+#include <stdio.h>
+
+int main(int argc, char **argv){
+    #PrintPiTimesNum(5)
+}
